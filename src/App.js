@@ -1,11 +1,14 @@
 import React from "react";
-import IndexPage from "./pages/Index.page";
+import IndexPage from "./pages/top/Index.page";
 import "./App.css";
+import { IntlProvider } from "react-intl";
 
 function App() {
   return (
     <div className="App">
-      <IndexPage />
+      <IntlProvider>
+        <IndexPage />
+      </IntlProvider>
     </div>
   );
 }
